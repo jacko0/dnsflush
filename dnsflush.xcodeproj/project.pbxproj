@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E496AF782F9403260004DA87 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E496AF772F9403260004DA87 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		E496AF6A2F9401EE0004DA87 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E496AF782F9403260004DA87 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = dnsflush;
 			packageProductDependencies = (
+				E496AF772F9403260004DA87 /* ArgumentParser */,
 			);
 			productName = dnsflush;
 			productReference = E496AF6C2F9401EE0004DA87 /* dnsflush */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = E496AF632F9401EE0004DA87;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E496AF762F9403260004DA87 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E496AF6D2F9401EE0004DA87 /* Products */;
 			projectDirPath = "";
@@ -295,6 +304,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E496AF762F9403260004DA87 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E496AF772F9403260004DA87 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E496AF762F9403260004DA87 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E496AF642F9401EE0004DA87 /* Project object */;
 }
